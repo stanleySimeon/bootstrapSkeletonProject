@@ -29,12 +29,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Bootsrap Project</title>
+    <title>Bootstrap Project</title>
     <style>
       .all-container {
         background-image: url("/images/deskBackground-Home.png");
         background-size: cover;
-        background-position: center;
         background-repeat: no-repeat;
         height: 115vh;
         display: flex;
@@ -52,25 +51,43 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        height: 80vh;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 150px;
         width: 100%;
         border-top-right-radius: 150px;
       }
 
       .btn:hover {
-        background-color: #a2b7eb;
+        background-color: #154bd4;
+        color: white;
         border: white;
+      }
+
+      .all-container-contact {
+        background-image: url("/images/desktop-images/contact-desk.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 120vh;
+        z-index: 100;
+        margin-top: -150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
     </style>
   </head>
 
   <body
+    id="index"
     class="body"
-    style="font-family: Poppins, sans serif; background: #ebf1f886"
+    style="
+      font-family: Poppins, sans serif;
+      background: #ebf1f886;
+      background-attachment: fixed;
+    "
   >
     <div class="all-container">
       <nav
@@ -115,23 +132,12 @@
                 letter-spacing: 0.37px;
               "
             >
-              I'am Stanley S. <br />
-              Happy to see you!
+              I'm Stanley <br />
+              glad to see you!
             </h1>
             <p
               class="card-text"
               style="
-              ">
-                        I'm Stanley <br />
-                        Glad to see you!
-                    </h1>
-                    <p class="card-text" style="
-                letter-spacing: 0.38px;
-              "></p>
-                    I am Stanley <br />
-                    Glad to see you!
-                    </h1>
-                    <p class="card-text" style="
                 color: #344563;
                 font-size: 20px;
                 top: 134px;
@@ -142,7 +148,7 @@
               I’m a software developer! I can help you build a product , feature
               or website Look through some of my work and experience! If you
               like what you see and have a project you need coded, don’t
-              hestiate to contact me.
+              hesitate to contact me.
             </p>
             <h6
               class="title"
@@ -978,7 +984,7 @@
       </div>
     </div>
 
-    <div class="all-container-about">
+    <div id="about" class="all-container-about">
       <div
         id="about-me"
         class="cad-about-me"
@@ -998,7 +1004,12 @@
               >
                 <div
                   class="card"
-                  style="width: 920px; border: none; background: transparent"
+                  style="
+                    width: 100%;
+                    height: auto;
+                    border: none;
+                    background: transparent;
+                  "
                 >
                   <div class="card-body">
                     <h1
@@ -1028,7 +1039,7 @@
                       Hello I’m a software developer! I can help you build a
                       product , feature or website Look through some of my work
                       and experience! If you like what you see and have a
-                      project you need coded, don’t hestiate to contact me.
+                      project you need coded, don’t hesitate to contact me.
                     </p>
                     <h6
                       class="title"
@@ -1129,11 +1140,114 @@
         </div>
       </div>
     </div>
+    <div id="contact" class="all-container-contact">
+      <div
+        class="container container-title container-description"
+        style="
+          width: 520px;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          margin-top: 130px;
+        "
+      >
+        <h1
+          class="ct-header"
+          style="
+            text-align: center;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 52px;
+            color: #ffffff;
+            margin-bottom: 20px;
+          "
+        >
+          Contact me
+        </h1>
+        <p
+          class="desc-heading"
+          style="
+            text-align: center;
+            font-size: 20px;
+            line-height: 28px;
+            color: #ebebff;
+          "
+        >
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it
+        </p>
+        <p></p>
+      </div>
+      <form
+        action="https://formspree.io/f/xpzbqlab"
+        method="post"
+        style="width: 40%; margin: 10px auto"
+      >
+        <div class="mb-3">
+          <label for="username" class="form-label" style="color: white"
+            >Username</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="username"
+            placeholder="John Doe"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label
+            for="exampleInputEmail1"
+            class="form-label"
+            style="color: white"
+            >Email</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            placeholder="johndoe@gmail.com"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="msg" class="form-label" style="color: #ffffff"
+            >Message</label
+          >
+          <textarea
+            name="msg"
+            type="text"
+            class="form-control"
+            id="msg"
+            maxlength="500"
+            cols="20"
+            rows="10"
+            placeholder="Write your message here"
+            required
+          ></textarea>
+        </div>
+        <div
+          class="button-button"
+          style="display: flex; justify-content: center"
+        >
+          <button
+            type="submit"
+            class="btn btn-primary"
+            style="
+              width: 150px;
+              height: 50px;
+              font-weight: 500;
+              font-size: 17px;
+              line-height: 24px;
+              color: #6070ff;
+              background: #ffffff;
+            "
+          >
+            Get It Touch
+          </button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
-
-    </div>
-</body>
-
-</html>
- 
