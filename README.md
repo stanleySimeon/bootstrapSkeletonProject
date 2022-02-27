@@ -1,11 +1,10 @@
 # Bootstrap portfolio design.
 
-This is a desktop version screenshot of the bootstrap portfolio.
 ![screenshot](./stanley.png)
 
 Additional description about the project and its features.
 
-- This project is compatible for desktop only, i will work to make it ready for another platform!
+- A Bootstrap portfolio design. Built with HTML/Bootstrap.
 
 ## Built With
 
